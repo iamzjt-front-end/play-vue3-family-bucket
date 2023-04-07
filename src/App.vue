@@ -4,7 +4,7 @@ import { ref } from 'vue';
 // import HelloWorld from './components/HelloWorld.vue'
 import Rate from './components/Rate.vue';
 
-const score = ref(3);
+const score = ref(3.5);
 </script>
 
 <template>
