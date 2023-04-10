@@ -1,4 +1,9 @@
-import { createStore } from 'vuex';
+// import { createStore } from 'vuex';
+import { createStore } from '../mini/mini-vuex';
+
+type State = {
+	count: number;
+}
 
 const store = createStore({
 	state() {
@@ -7,8 +12,15 @@ const store = createStore({
 		};
 	},
 	mutations: {
-		add(state) {
+		add(state: State) {
 			state.count++;
+		}
+	},
+	actions: {
+		addAsync({ commit }: any) {
+			setTimeout(() => {
+				commit('add');
+			}, 1000);
 		}
 	}
 });
