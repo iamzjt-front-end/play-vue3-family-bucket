@@ -16,7 +16,7 @@ Vuex 是一个专门为 Vue.js 应用程序开发的状态管理模式。它采�
 
 ## 2. Vuex的基本使用
 
-挂上一个文档
+[Vuex 是什么？](https://vuex.vuejs.org/zh/)
 
 ## 3. mini-Vuex的实现
 
